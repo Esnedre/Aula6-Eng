@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+    <script>
+        function calcularMediaAritmetica() {
+            var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+            var numero2 = parseFloat(prompt("Digite o segundo número:"));
+            var numero3 = parseFloat(prompt("Digite o terceiro número:"));
+
+            if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)) {
+                alert("Por favor, digite apenas números válidos.");
+                return;
+            }
+
+            // Calcula a média aritmética
+            var media = (numero1 + numero2 + numero3) / 3;
+
+            // Exibe a média aritmética em um alerta
+            alert("A média aritmética é: " + media.toFixed(2));
+        }
+    </script>
+</head>
+<body>
+    <button onclick="calcularMediaAritmetica()">Calcular Média Aritmética</button>
+</body>
+</html>
